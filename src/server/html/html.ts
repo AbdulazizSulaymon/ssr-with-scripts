@@ -25,7 +25,7 @@ export default ({styles, children, extractor}: any) => {
             console.log("onload");
             
             btnShow = document.querySelector("#btnShow");
-            count = document.querySelector("#count");
+            count = document.querySelector(".count");
             
             console.log(btnShow)
             btnShow.addEventListener("click", show);

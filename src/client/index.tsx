@@ -6,7 +6,7 @@ import { loadableReady } from "@loadable/component";
 
 const renderApp = () => {
   const rootContent = document.getElementById("root");
-  const renderMethod = module.hot ? render : hydrate;
+  const renderMethod =  hydrate;
 
   renderMethod(
     <BrowserRouter>
@@ -20,6 +20,6 @@ loadableReady(() => {
   renderApp();
 });
 
-if (module.hot) {
-  module.hot.accept();
-}
+// if (module.hot) {
+//   module.hot.accept();
+// }
