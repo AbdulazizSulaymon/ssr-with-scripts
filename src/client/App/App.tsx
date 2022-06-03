@@ -9,14 +9,10 @@ const App = () => {
     const [isShow, setIsShow] = useState(true);
 
     return (
-        <div className='bg-color'>
-            <AppStyled>
-                Welcome to the React Final Boiler Plate
-                <input value={value} onChange={(e)=>setValue(e.target.value)} />
-                {isShow && <button className={`${value}`} onClick={() => setCount(count => count + 1)}>{count}</button>}
-                <button id="btnShow">Console.log</button>
-                <button onClick={()=>setIsShow(v => !v)}>Toggle show</button>
-            </AppStyled>
+        <div className="bg-color321">
+            <div className="test2 tree">
+                1
+            </div>
         </div>
     );
 };

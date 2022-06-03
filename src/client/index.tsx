@@ -8,12 +8,14 @@ const renderApp = () => {
   const rootContent = document.getElementById("root");
   const renderMethod =  hydrate;
 
-  renderMethod(
-    <BrowserRouter>
-      <App />abc
-    </BrowserRouter>,
-    rootContent
-  );
+   setTimeout(()=>{
+     renderMethod(
+         <BrowserRouter>
+           <App />
+         </BrowserRouter>,
+         rootContent
+     );
+   }, 1000)
 };
 
 loadableReady(() => {

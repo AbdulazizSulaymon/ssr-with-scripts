@@ -10,12 +10,16 @@ export default ({styles, children, extractor}: any) => {
   </head>
   <body class="h-100">
     <button onclick="show()">show</button>
+    
     <div id="root">
-   
-    <div class="styles__AppStyled-sc-1e1oq92-0 wcHoN">Welcome to the React Final Boiler Plate<button>10</button></div>
-    ${children}</div>
+      <div class="bg-color123">
+        <div class="test2 tree">
+               1    
+        </div>
+       </div>
+    </div>
     ${extractor.getScriptTags()}
-    123
+ 
     <script>
         let btnShow;
         let count;
@@ -23,13 +27,12 @@ export default ({styles, children, extractor}: any) => {
         
         window.onload = () => {
             console.log("onload");
-            
-            btnShow = document.querySelector("#btnShow");
-            count = document.querySelector(".count");
-            
-            console.log(btnShow)
-            btnShow.addEventListener("click", show);
-            btnShow.click();
+            const div = document.querySelector(".test");
+            setTimeout(()=>{
+                 const div2 = document.querySelector(".test");
+             
+                 console.log("b: ",div === div2);
+            }, 3000)
         }
         
         const show = (e) => {
